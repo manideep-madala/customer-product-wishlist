@@ -30,8 +30,6 @@ public class CustomerController {
 	@Autowired
 	private CustomerUtil CustomerUtil;
 	
-	@Autowired
-    private RestTemplate restTemplate;
 	
 	@PostMapping("/add")
 	@ResponseStatus(HttpStatus.CREATED)

@@ -27,10 +27,8 @@ public class WishlistController {
     @Autowired
     private WishedItemUtil wishedItemUtil;
     
-    @Autowired
-    private RestTemplate restTemplate;
     
-    @PostMapping("/add")
+        @PostMapping("/add")
 	@ResponseStatus(HttpStatus.CREATED)
 	public WishedItemDto addWishlist(@RequestBody CreateWishedItemRequest requestData) {
 		WishedItem wishedItem = new WishedItem(requestData.getCustId(), requestData.getProdId());
